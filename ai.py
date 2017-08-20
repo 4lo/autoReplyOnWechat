@@ -47,5 +47,5 @@ def text_reply(msg):
     itchat.send(r"%s" % r['text'],
                 toUserName=msg['FromUserName'])
 
-itchat.auto_login()
+itchat.auto_login(enableCmdQR=True)
 itchat.run()
